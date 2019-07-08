@@ -1,0 +1,29 @@
+{% extends 'baseadmin.html.twig' %}
+
+{% block body %}
+    <div class="mt-4">
+        <h2>Ajouter un nouveau livre</h2>
+
+        {{ include('admin/_form.html.twig', {form: form, button: 'Créer'}) }}
+
+
+    </div>
+
+{% endblock %}
+
+
+{% block javascripts %}
+
+    <script src="https://cdn.ckeditor.com/ckeditor5/12.2.0/classic/ckeditor.js"></script>
+
+    <script>
+        ClassicEditor
+            .create( document.querySelector( '#livre_description' ) )
+            .then( editor => {
+                console.log( editor );
+            } )
+            .catch( error => {
+                console.error( error );
+            } );
+    </script>
+{% endblock %}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>{% block title %}Ombú éditions{% endblock %}</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="{{ asset('css/semantic.min.css') }}" />
+        <link rel="stylesheet" href="{{ asset('js/owlcarousel/owl.carousel.min.css') }}" />
+
+        <link rel="stylesheet" href="{{ asset('css/main.css') }}" />
+
+        {% block stylesheets %}{% endblock %}
+    </head>
+    <body>
+
+
+        {% block body %}{% endblock %}
+
+        <!-- Footer -->
+        <footer id="footer">
+            <a href="#" class="info fa fa-info-circle"><span>About</span></a>
+            <div class="inner">
+                <div class="content">
+                    <h3><img class="logo" src="{{ asset('img/logo-ombu-editions-blanc.svg') }}" alt="Ombú éditions" /></h3>
+                    <p>Pourquoi « Ombú » ? Tout simplement parce ce projet est né entre l’Argentine et la France, parce que l’ombú est un arbre typique de la pampa argentine, un immense arbre solitaire qui sert de repère et d’abri dans l’immensité de la plaine.</p>
+
+                    <div class="ui secondary fluid three item menu">
+                        <a href="{{ path('home') }}" class="item">Accueil</a>
+                        <a href="{{ path('about') }}" class="item">Ombú éditions</a>
+                        <a href="{{ path('contact') }}" class="item">Contact</a>
+                    </div>
+                </div>
+                <div class="copyright">
+                    <h3>Suivez-nous</h3>
+                    <ul class="icons">
+                        <li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+                        <li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+                        <li><a href="#" class="icon fa-pinterest"><span class="label">Instagram</span></a></li>
+                    </ul>
+                    <a href="https://typographyque.com">&copy; Typographyque communication</a>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Scripts -->
+        <script src="{{ asset('js/jquery.min.js') }}"></script>
+        <script src="{{ asset('js/skel.min.js') }}"></script>
+        <script src="{{ asset('js/util.js') }}"></script>
+        <script src="{{ asset('js/semantic.min.js') }}"></script>
+        <script src="{{ asset('js/owlcarousel/owl.carousel.min.js') }}"></script>
+        <script src="{{ asset('js/main.js') }}"></script>
+        {% block javascripts %}{% endblock %}
+    </body>
+</html>

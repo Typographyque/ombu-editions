@@ -1,0 +1,19 @@
+{% extends 'baseadmin.html.twig' %}
+
+{% block body %}
+<div class="mt-4">
+    <h2>Ajouter un administrateur</h2>
+
+    {{ form_start(form) }}
+
+    {{ form_widget(form) }}
+
+    <button type="submit" class="btn btn-secondary">Ajouter</button>
+    {{ form_end(form) }}
+</div>
+
+
+{% endblock %}
+
+
+

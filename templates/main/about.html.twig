@@ -1,0 +1,38 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}
+
+{% endblock %}
+
+{% block body %}
+    <!-- Header -->
+    <header id="header" class="preview">
+        <div class="inner">
+            <div class="content">
+                <h1><img class="logo" src="{{ asset('img/logo-ombu-editions-blanc.png') }}" alt="Ombú éditions" /></h1>
+                <h2>Una buena frace bien escrita <br />
+                    en dos partes.</h2>
+            </div>
+            <a href="{{ path('home') }}" class="button hidden"><span>Accueil</span></a>
+        </div>
+    </header>
+
+    <!-- Main -->
+    <div id="preview">
+        <div class="inner">
+            <div class="image fit">
+                <img src="" alt="" />
+            </div>
+            <div class="content">
+                <header>
+                    <h2>Ombú éditions</h2>
+                </header>
+                <p>Ombú est une maison d’édition spécialisée sur les cultures et littératures d’Amérique latine. Elle publie des ouvrages d’auteurs latino-américains, français mais aussi d’ailleurs portant sur l’Amérique latine. Il peut s’agir d’œuvres originales et/ou de traductions.</p>
+                <p>Ombú s’inscrit dans la dynamique culturelle toulousaine, où la culture latino-américaine et hispanophone occupe une place majeure. La ville offre un terreau propice au développement de notre maison d’édition, que ce soit en termes de partenariats ou de lecteurs potentiels.</p>
+                <p>Nos ouvrages ne s’adressent pas pour autant uniquement à un public averti ou à un lectorat passionné d’Amérique latine, mais à un public plus vaste. Notre ambition est de faire mieux connaître la richesse et la diversité de cette partie du monde au lectorat francophone.</p>
+                <p>Notre catalogue propose des éditions numériques ou papier, qui tentent d’exploiter au mieux les spécificités de chaque support. Nous suivons avec attention les diverses évolutions technologiques liées à l’édition numérique, notamment ce qui concerne l’intégration multimédia et l’interactivité à partir de l’utilisation des langages de programmation web. Par ailleurs, Ombú attache une grande importance à la composition et à la mise en page de ses ouvrages et valorise ses textes par diverses illustrations, afin de faire de chaque publication un livre-objet et de proposer une véritable plus-value du papier par rapport à la version numérique.</p>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+

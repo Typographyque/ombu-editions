@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}Contact Typographyque.com{% endblock %}</title>
+</head>
+<body>
+<header>
+</header>
+
+<div>
+    <table>
+        <thead>
+        <tr>
+            <th colspan="2">Contact site Typographyque.com</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>Prénom</td>
+            <td>{{ contact.firstname }}</td>
+        </tr>
+        <tr>
+            <td>Nom</td>
+            <td>{{ contact.lastname }}</td>
+        </tr>
+        <tr>
+            <td>Téléphone</td>
+            <td>{{ contact.phone }}</td>
+        </tr>
+        <tr>
+            <td>Email</td>
+            <td>{{ contact.email }}</td>
+        </tr>
+        <tr>
+            <td>Message</td>
+            <td>{{ contact.message | nl2br }}</td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+
+<footer>
+
+</footer>
+</body>
+</html>
